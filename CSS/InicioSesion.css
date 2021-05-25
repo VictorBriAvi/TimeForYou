@@ -1,0 +1,296 @@
+.grid-container {
+
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(3, auto);
+    gap: 0.1em;
+}
+
+
+
+
+header,
+footer {
+    grid-column: 1 / span 3;
+}
+
+article {
+    grid-column: 1/ span 3;
+}
+
+@media all and (max-width:600px) {
+
+    aside,
+    article {
+        grid-column: 1 / span 3;
+    }
+}
+
+
+
+
+
+/* BLOQUE DE INICIAR SESION*/
+
+.Iniciar {
+
+
+
+    width: 50%;
+    height: 60em;
+    display: block;
+    margin: auto;
+    
+}
+
+
+
+
+
+.Iniciar form {
+    margin-right: 2em;
+    padding-top: 2em;
+}
+
+.Iniciar form h1 {
+
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 2em;
+
+}
+
+
+
+.Iniciar form input[type=email] {
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.555);
+    border-radius: 4px;
+    display: block;
+    margin-top: 2em;
+
+}
+
+.Iniciar form input[type=email]:hover{
+
+    background-color: rgba(128, 128, 128, 0.473);
+    border: 2px solid black;
+}
+
+.Iniciar form input[type=password] {
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.555);
+    border-radius: 4px;
+    display: block;
+    margin-top: 2em;
+
+}
+
+.Iniciar form input[type=password]:hover{
+
+    background-color: rgba(128, 128, 128, 0.473);
+    border: 2px solid black;
+}
+
+
+
+.Iniciar form label {
+
+    margin-right: 2em;
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+/*BOTONES DE LA PLANILLA INICIAR*/
+.botoniniciar button {
+
+    border-radius: 8px;
+    background-color: white;
+    /* Green */
+    border: none;
+    color: black;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 1px solid;
+    margin-top: 4em;
+    box-shadow: 5px 10px 18px black;
+    
+
+
+}
+
+.botoniniciar button[type=reset] {
+
+    border-radius: 8px;
+    background-color: white;
+    /* Green */
+    border: none;
+    color: black;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 1px solid;
+    margin-top: 4em;
+    box-shadow: 5px 10px 18px black;
+
+}
+
+.botoniniciar button:hover {
+
+    background-color: black;
+    color: white;
+}
+
+
+@media only screen and (max-width: 360px){
+
+    article{
+
+        
+        grid-row: 2 / span 5;
+    }
+
+    .grid-container {
+        
+        grid-template-rows: repeat(4,auto);
+        
+    }
+
+    .botoniniciar button[type=reset] {
+
+       
+        display: block;
+        margin: auto;
+        margin-top: 3em;
+        margin-left: 0 !important;
+        
+       
+    
+    }
+
+
+    .botoniniciar button {
+
+        
+        margin: auto;
+        display: block;
+        margin-top: 5em;
+
+        margin-left: 0 !important;
+
+    }
+
+    .Iniciar form label {
+
+        margin-top: 1em;
+    }
+
+    .Iniciar form h1 {
+
+        margin-top: 1em;
+        margin-bottom: 0.6em;
+    }
+}
+
+@media only screen and (max-width: 411px){
+
+    article{
+
+        
+        grid-row: 2 / span 5;
+    }
+
+    .grid-container {
+        
+        grid-template-rows: repeat(4,auto);
+        
+    }
+
+    .botoniniciar button[type=reset] {
+
+       
+        display: block;
+        margin: auto;
+        margin-top: 3em;
+        margin-left: 0 !important;
+        
+       
+    
+    }
+
+
+    .botoniniciar button {
+
+        
+        margin: auto;
+        display: block;
+        margin-top: 5em;
+
+        margin-left: 0 !important;
+
+    }
+
+    .Iniciar form label {
+
+        margin-top: 1em;
+    }
+
+    .Iniciar form h1 {
+
+        margin-top: 1em;
+        margin-bottom: 0.6em;
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+
+    article{
+
+        
+        grid-row: 2 / span 5;
+    }
+
+    .grid-container {
+        
+        grid-template-rows: repeat(4,auto);
+        
+    }
+
+
+}
+
+@media only screen and (max-width: 540px){
+
+    article{
+
+        
+        grid-row: 2 / span 5;
+    }
+
+    .grid-container {
+        
+        grid-template-rows: repeat(4,auto);
+        
+    }
+
+}

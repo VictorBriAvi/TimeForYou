@@ -1,0 +1,130 @@
+.grid-container {
+
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(3, auto);
+    gap: 0.1em;
+}
+
+
+
+
+header,
+footer {
+    grid-column: 1 / span 3;
+}
+
+article {
+    grid-column: 1/ span 3;
+}
+
+@media all and (max-width:600px) {
+
+    aside,
+    article {
+        grid-column: 1 / span 3;
+    }
+}
+
+
+#container{
+    width: 50%;
+    height: 50em;
+    
+   
+    margin: auto;
+    display: block;
+    
+    
+
+}
+.contenedor{
+    margin-top: 5em;
+    text-align: center;
+}
+
+.contenedor h1{
+
+    color: black;
+    font-size:4em;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 4em;
+
+}
+.contenedor p{
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1em;
+}
+
+.fas{
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 5em;
+}
+
+@media screen and (max-width: 700px){
+
+
+    .fas{
+        text-align: center;
+    }
+
+    #container{
+        margin-bottom: 5em;
+    }
+
+}
+
+@media screen and (max-width: 430px){
+
+
+.fas{
+        text-align: center;
+        font-size: 2em;
+    }
+
+.contenedor i{
+    margin-bottom:1em ;
+}
+
+.contenedor p {
+
+    text-align: center;
+}
+
+.contenedor h1{
+
+    font-size: 2.5em;
+    text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 280px){
+
+   
+
+.contenedor i{
+    margin-bottom:1em ;
+}
+
+.contenedor p {
+
+    text-align: center;
+}
+
+.contenedor h1{
+
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.contenedor a {
+    text-align: center;
+}
+}

@@ -1,0 +1,46 @@
+.grid-container{
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+}
+
+
+
+header, footer{
+    grid-column: 1 / span 3 ;
+
+}
+
+article{
+
+    grid-column: 1 / span 3;
+}
+
+.izquierda{
+
+    grid-column: 1/ span 1 ;
+}
+
+.derecha {
+
+    grid-column: 2 / span 2 ;
+}
+
+@media all and (max-width: 600px) {
+    
+    aside, article{
+
+        grid-column: 1/ span 3;
+    }
+
+    .grid-container{
+
+ 
+        grid-template-rows: repeat(5, 100px);
+        gap: 10px;
+    
+    }
+}
+

@@ -1,0 +1,201 @@
+footer{
+    margin-top: 2em;
+    background-color: black;
+}
+.imagenbarra img {
+    width: 12em;
+    height: 12em;
+    display: block;
+    margin: auto;
+}
+.iconos i {
+    font-size: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.2em;
+    color: white;
+}
+
+.iconos i:hover{
+
+
+    background-color: #555;
+    border-radius: 1em;
+    border: 0.1em solid white;
+    width: 2em;
+
+}
+.iconos {
+    text-align: center;
+}
+.vertical {
+    float: right;
+    margin-right: 6em;
+}
+.vertical ul {
+    list-style-type: none;
+    padding: 0;
+    width: 10em;
+    font-size: 1em;
+    
+}
+.vertical li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+.vertical li {
+    margin: 1em;
+    font-size: 1em;
+}
+
+.vertical  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    border-radius: 5em;
+  }
+
+.vertical li:last-child {
+    border-bottom: none;
+}
+footer h1 {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+@media all and (max-width: 600px) {
+
+    aside,
+    article {
+
+        grid-column: 1/ span 3;
+    }
+
+    .grid-container {
+
+
+        grid-template-rows: repeat(5, 100px);
+        gap: 10px;
+
+    }
+
+}
+
+@media all and (max-width: 411px){
+
+    .vertical  {
+        margin: 1em;
+        
+    }
+    
+}
+
+@media all and (max-width: 320px){
+
+    .vertical  {
+
+        margin: 0em !important;
+        
+    }
+    
+}
+
+
+@media only screen and (max-width: 360px){
+
+
+.iconos i{
+    font-size: 1em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+.imagenbarra img{
+
+    width: 10em;
+    height: 10em;
+}
+
+
+
+.vertical {
+    
+    margin-right: 2em;
+    
+}
+.vertical ul {
+  
+    
+    font-size: 1em;
+}
+
+
+footer h1{
+    font-size: 1em;
+}
+
+}
+
+@media only screen and (max-width: 414px){
+
+
+    .iconos i {
+        font-size: 1em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    }
+    .imagenbarra img{
+
+        width: 10em;
+        height: 10em;
+    }
+
+    .vertical{
+
+        margin: 0.1em !important;
+    }
+}
+
+@media only screen and (max-width: 540px){
+
+    .iconos i {
+        margin-left: 0.1em;
+        font-size: 1.5em;
+    }
+    .vertical{
+
+        margin: 1em ;
+    }
+}
+
+@media only screen and (max-width: 280px){
+
+
+    .vertical {
+    
+        margin-right: 2em;
+        
+        
+    }
+    .vertical ul {
+      
+        
+        font-size: 0.8em;
+    }
+
+    .iconos i{
+        font-size: 1em;
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+    }
+    footer h1{
+        font-size: 0.5em;
+    }
+    .imagenbarra img{
+        width: 8em;
+        height: 8em;
+    }
+}
